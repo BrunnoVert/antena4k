@@ -23,16 +23,16 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1898"
+     inkscape:window-width="945"
      inkscape:window-height="1038"
      id="namedview889"
      showgrid="false"
-     inkscape:zoom="2.3069398"
-     inkscape:cx="-30.768175"
-     inkscape:cy="-74.453181"
+     inkscape:zoom="9.2277592"
+     inkscape:cx="74.138367"
+     inkscape:cy="5.7607656"
      inkscape:window-x="1929"
      inkscape:window-y="29"
-     inkscape:window-maximized="1"
+     inkscape:window-maximized="0"
      inkscape:current-layer="VegazTransparente"
      inkscape:document-rotation="0"
      fit-margin-top="0"
@@ -76,7 +76,71 @@
        style="fill:#e6e6e6;fill-opacity:1" />
     <path
        id="path935"
-       style="fill:#f4b224;fill-opacity:1"
+       style="fill:#ffcc03;fill-opacity:1"
        d="M 79.293457,28.566895 H 89.493164 V 31 H 75.651855 V 28.808594 L 85.271484,16.030762 H 75.796875 V 13.56543 h 13.212891 v 2.11084 z" />
   </g>
+  <!-- Code injected by live-server -->
+  <script
+     type="text/javascript"
+     id="script908">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function() {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function(msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			console.log('Live reload enabled.');
+		})();
+	}
+	// ]]></script>
+  <!-- Code injected by live-server -->
+  <script
+     type="text/javascript"
+     id="script910">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function() {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					head.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					head.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function(msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			console.log('Live reload enabled.');
+		})();
+	}
+	// ]]></script>
 </svg>
