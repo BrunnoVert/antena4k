@@ -26,7 +26,7 @@
 
 
 <!-- Facebook Pixel Code Vegaz 2021 Antena4k -->
- <script>
+<!--  <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -40,7 +40,7 @@
 </script>
 <noscript><img height="1" width="1" style="display:none"
   src="https://www.facebook.com/tr?id=194567028720200&ev=PageView&noscript=1"
-  /></noscript>
+  /></noscript> -->
 <!-- End Facebook Pixel Code -->
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -59,6 +59,10 @@
 html {
   scroll-behavior: smooth;
 }
+
+  body {
+    padding-top: 50px;
+  }
 
   .checked{
     color: #FFCC03;
@@ -181,7 +185,7 @@ a:visited {
   color:white !important;
 }
 
-.product-description{  
+.product-description{
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
 }
@@ -199,6 +203,10 @@ a:visited {
   .badge-pill {
     display:none !important;
   }
+
+  #menu-mobile {
+    display:none;
+  }
 }
 
   </style>
@@ -207,43 +215,51 @@ a:visited {
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark scrolling-navbar" style="background:#007fff !important;">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar top-nav-collapse" style="background: #2290ff !important;">
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand waves-effect"  target="_blank">
-        <!-- <strong class="blue-text">VEGAZ</strong> -->
-        <img src="img/vegaz.svg" alt="">
-      </a>
 
 
-      <i class="fas fa-shopping-cart ml-auto" style="color:white !important;" onclick="cartItem();"></i>
-      <span id="cart-item" class="badge badge-pill badge-light ml-2" style="background:white !important;     display: none;">1</span>
+
+
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+
+  </button><span id="menu-mobile" style="
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1rem;
+    color: white;
+">Menu</span><i class="fas fa-shopping-cart ml-auto" style="color:white !important;" onclick="cartItem();"><span style="
+    font-family: 'Roboto';
+    font-weight: 400;
+"> Carrinho</span></i>
+      <span id="cart-item" class="badge badge-pill badge-light ml-2" style="display: none; background: white !important;">1</span>
 
 
 
       <!-- Collapse -->
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+
 
 
   <div class="navbar-collapse collapse" id="navbarNav" style="">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Inicio<span class="sr-only">(current)</span></a>
+        <a class="nav-link waves-effect waves-light" href="#">Inicio<span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="sobre/sobre.html">Sobre</a>
+        <a class="nav-link waves-effect waves-light" href="sobre/sobre.html">Sobre</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#contato">Atendimento</a>
+        <a class="nav-link waves-effect waves-light" href="#contato">Atendimento</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="sobre/politica.html">Politicas de Troca</a>
+        <a class="nav-link waves-effect waves-light" href="sobre/politica.html">Politicas de Troca</a>
       </li>
     </ul>
-    <form class="form-inline">
+    <!-- <form class="form-inline">
     <input class="form-control mr-sm-2 mt-2" type="search" placeholder="Procure por código, nome, marca..." aria-label="Search">
     <button class="btn btn-outline-light my-2 my-sm-0 waves-effect waves-light" type="submit" style="
     padding: 8px;
@@ -252,7 +268,7 @@ a:visited {
     border: 2px solid #e0e0e000!important;
 "><i class="fa fa-search" aria-hidden="true"></i>
 </button>
-    </form>
+    </form> -->
   </div>
       <!-- Links -->
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -310,14 +326,30 @@ a:visited {
   </nav>
   <!-- Navbar -->
 
+
+  <!-- Navbar Logo  -->
+<nav class="navbar navbar-default " style="
+    background: #007fff;
+    height: 181px;
+" align="center">
+    <ul class="nav navbar-nav text-center mx-auto">
+        <li class="nav-item"><a class="nav-link waves-effect waves-light" href="#"><img src="img/vegaz.svg" alt="" style="
+    height: 2.9rem;
+">
+</a></li>
+<li class="nav-item mt-4"><span style="color: white;font-family: 'Roboto';font-weight: 400;font-size: 12px;">Frete grátis para todo o Brasil - <span style="
+    font-weight: 400;
+">Parcele em até 12x</span></span></li>
+    </ul>
+</nav>
   <!-- Navbar Bottom  -->
 
-  <div class=" navbar justify-content-center fixed-bottom bottomMenu" style="background: white; padding: 0px;  display:none;">
+  <div class=" navbar justify-content-center fixed-bottom bottomMenu" style="background: rgb(38, 54, 68); padding: 0px; display: none;">
         <div class="container row fix_cart_inner" style="margin-bottom: 10px;font-family: Montserrat, sans-serif;font-weight: 500;font-style: normal;line-height: 1.6;">
 
           <div class="sticky-product media col-md-6 col-lg-4">
             <div class="media-left">
-<img style="border-radius: 4px;width:40px;height:40px;margin-top: 15px;" src="//cdn.shopify.com/s/files/1/0522/8678/3685/products/Screenshot_1_500x_4989683b-fdfb-4978-954b-a4797acaf105.png?v=1615181965">
+<img style="border-radius: 4px;width:40px;height:40px;margin-top: 15px;" src="img/product-img.png">
             </div>
             <div class="media-body" style="
 ">
@@ -325,7 +357,7 @@ a:visited {
 
     <h4 class="media-heading" style="
     font-size: 15px;
-    color: #212529;
+    color: white;
     font-weight: 700;
     padding-top: 10px;
     margin-bottom:0;
@@ -338,17 +370,17 @@ a:visited {
     margin-bottom:0;
     margin-top: 6px;
     "> <span id="propricecompare"><span class="money" style="
-    color: #3a3a3a;
+    color: #b3b3b3;
     text-decoration: line-through;
     ">R$ 197,00  BRL</span></span><span id="proprice"><span class="money" style="
-    color: black;
+    color: #fff;
     margin-left: 15px;
 ">R$ 127,00 BRL
 </span></span>  </p>
             </div>
           </div><div class="fix_add_button col-md-6 col-lg-4">
 
-<button onclick="cartItem();" ontouchstart="document.getElementById('buy-here').scrollIntoView({behavior: 'smooth'});" style="/* padding: 0.84rem 0.20rem; */font-weight: 400;max-width: 340px;width: 100%;padding: 5px 0px;color: white !important;background-color: #58c22e !important;font-size: 21px;font-family: 'Roboto';text-transform: none !important;" class="ymp_mainBtn ymp_elem_0 btn btn-success AddToCart sticky_addtocart ymp_mainBtn ymp_elem_0 waves-effect waves-light animate__animated animate__headShake animate__infinite	">Comprar agora</button>
+<button onclick="cartItem(); redirectTo('https://seguro.ecommlojavegaz.com.br/checkout/3059992937/12')" ontouchstart="redirectTo('https://seguro.ecommlojavegaz.com.br/checkout/3059992937/12')" style="/* padding: 0.84rem 0.20rem; */font-weight: 400;max-width: 340px;width: 100%;padding: 5px 0px;color: white !important;background-color: #259030 !important;font-size: 21px;font-family: 'Roboto';text-transform: none !important;" class="ymp_mainBtn ymp_elem_0 btn btn-success AddToCart sticky_addtocart ymp_mainBtn ymp_elem_0 waves-effect waves-light animate__animated animate__headShake animate__infinite	">Comprar agora</button>
           </div>
 
 
@@ -358,16 +390,31 @@ a:visited {
 
 
   <!--Main layout-->
-  <main class="mt-5 pt-4">
+  <main>
     <div class="container dark-grey-text mt-5">
 
       <!--Grid row-->
-      <div class="row wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
+      <ul class="breadcrumb border-bottom" style="
+    background: white;
+">
+  <li><a href="#" style="
+    color: #585858;
+    font-family: 'Roboto';
+    font-weight: 300;
+">Início</a> <span class="divider">/</span></li>
+  <li><a href="#" style="
+    color: #585858;
+    font-family: 'Roboto';
+    font-weight: 400;
+" class="active">ANTENA HDTV 4K</a> </li>
+
+</ul>
+<div class="row wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
 
         <!--Grid column-->
         <div class="col-md-6 mb-4">
 
-          <img src="https://cdn.shopify.com/s/files/1/0522/8678/3685/products/Screenshot_1_500x_4989683b-fdfb-4978-954b-a4797acaf105_1512x.png?v=1615181965" class="img-fluid" alt="">
+          <img src="img/product-img.png" class="img-fluid" alt="">
 
         </div>
         <!--Grid column-->
@@ -412,29 +459,29 @@ a:visited {
             <strong style="font-weight: 800; color:black;"><span>R$ <span id="price-black-promo">127</span><sup>00</sup></span></strong><span class="mr-1">
                 <del>R$ <del id="price-black-old">197</del><sup>00</sup></del>
               </span>
-              
+
               <br>
               </p><p class="mb-4">
-              ou por apenas 12x de <span style="color: #3bb54a;font-weight: 500;">R$ 12,75</span>
+              ou por apenas 12x de <span style="color: #259030;font-weight: 500;">R$ 12,75</span>
             </p>
 
-            
+
 
 
             <span style="font-size: 18px;"><i class="fa fa-plane" style="transform: rotate(
 314deg
-); font-size: 14px;" aria-hidden="true"></i><b style="color: #3bb54a;font-weight:600;"> Frete Grátis</b> para todo <b style="color: #3bb54a;">Brasil</b></span>
+); font-size: 14px;" aria-hidden="true"></i><b style="color: #259030;font-weight:600;"> Frete Grátis</b> para todo <b style="color: #259030;">Brasil</b></span>
 <p style="font-size: 12px; font-weight: 400;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prazo de entrega de <b>7 à 30 dias úteis</b></p>
 
 <p style="
     margin-bottom: 0px;
 ">
-              <span style="color: #3bb54a;"><i class="fa fa-check-circle"></i>
+              <span style="color: #259030;"><i class="fa fa-check-circle"></i>
 Produto a pronta entrega!</span></p>
 
 
             <p>
-              <span style="color: #3bb54a;"><i class="fa fa-history"></i>
+              <span style="color: #259030;"><i class="fa fa-history"></i>
   7 dias para trocas e devoluções.</span>
             </p>
 
@@ -461,12 +508,7 @@ Produto a pronta entrega!</span></p>
 
             </div>
 
-            <div class="text-center" style="display:grid;" width:100="">
-            <a id="buy-black" href="https://seguro.ecommlojavegaz.com.br/checkout/3059992937/12" class="btn btn-primary btn-lg text-center waves-effect waves-light" type="submit" style="background:#3bb54a !important; -webkit-appearance: none; border-radius: 0;" onclick="cartItem();"><i class="fas fa-shopping-cart mr-2"></i>Comprar
 
-                
-              </a>
-            </div>
 
 
 
@@ -476,7 +518,10 @@ Produto a pronta entrega!</span></p>
 
          </div>
 
-          <!--Content-->
+          <div class="text-center" style="display:grid;" width:100="">
+            <a id="buy-black" href="https://seguro.ecommlojavegaz.com.br/checkout/3059992937/12" class="btn btn-primary btn-lg text-center waves-effect waves-light" type="submit" style="background: #259030 !important;-webkit-appearance: none;border-radius: 0;" onclick="cartItem();"><i class="fas fa-shopping-cart mr-2"></i>Comprar agora
+</a>
+            </div><!--Content-->
 
         </div>
         <!--Grid column-->
@@ -504,15 +549,15 @@ Produto a pronta entrega!</span></p>
       </div>
       <!--Grid row-->
 
-      <div width="100%" style="text-align: center;">
+      <!--  <div width="100%" style="text-align: center;">
 
         <span id="sel1" onclick="show('sel1','resultsel1');" class=" btn btn-outline-primary waves-effect waves-light">Descrição</span>
 
-        <span id="sel2" onclick="show('sel2','resultsel2');" class=" btn btn-outline-info waves-effect waves-light">Avaliações</span>
+        <span id="sel2" onclick="show('sel2','resultsel2');" class=" btn btn-outline-info waves-effect waves-light">Avaliações</span> -->
 
         <!-- <span id='sel3' onclick="show('sel3','resultsel3');" class="m-4">div2</span> -->
 
-      </div>
+        <!-- </div> -->
 
 
       <div id="resultsel1">
@@ -530,14 +575,14 @@ Produto a pronta entrega!</span></p>
 ">m qualquer país do mundo</em><em data-mce-fragment="1" style="
     color: black;
 ">, nunca mais pague taxas caras de cabo ou satélite!&nbsp;A Antena HDTV pode trazer todas as notícias locais, previsão do tempo, programas infantis totalmente GRÁTIS.</em></span></span>
-   <span data-mce-fragment="1"><em data-mce-fragment="1"><img alt="" src="https://cdn.shopify.com/s/files/1/0512/5203/5764/files/product-image-1513826586_500x_500x_bfe42293-50b4-4d6f-8163-ff3b5ca91417_2048x2048.png?v=1609949579" data-mce-fragment="1" class="img-fluid" data-mce-src="https://cdn.shopify.com/s/files/1/0512/5203/5764/files/product-image-1513826586_500x_500x_bfe42293-50b4-4d6f-8163-ff3b5ca91417_2048x2048.png?v=1609949579"></em></span>
+   <span data-mce-fragment="1"><em data-mce-fragment="1"><img alt="" src="img/description/1.jpeg" data-mce-fragment="1" class="img-fluid" data-mce-src="img/description/1.jpeg"></em></span>
    <br><span><span data-mce-fragment="1"><em data-mce-fragment="1"><strong data-mce-fragment="1" style="
     color: black;
 ">Canais digitais totalmente GRÁTIS!</strong></em></span></span><br>
    <span data-mce-fragment="1">
      <span data-mce-fragment="1" style="
     color: black;
-"><em data-mce-fragment="1"><strong data-mce-fragment="1"></strong></em>Obtenha acesso às suas notícias locais, sitcoms, conteúdo educacional, etc. e evite pagar caro por cabo ou satélite.&nbsp;Desfrute de transmissões over-the-air de alta qualidade.&nbsp;A antena HDTV ultrafina e discreta tem um alcance de 120 milhas e pode ser colocada em qualquer lugar da sua casa e a antena procura constantemente por novos canais.</span><br><span data-mce-fragment="1"><img class="mt-5 mb-4 img-fluid" src="https://cdn.shopify.com/s/files/1/0399/5851/1782/files/3b7d07b8-bb17-4f07-9b24-cd3c16508ad8_480x480.jpg?v=1606444751" alt="" data-mce-fragment="1" data-mce-src="https://cdn.shopify.com/s/files/1/0399/5851/1782/files/3b7d07b8-bb17-4f07-9b24-cd3c16508ad8_480x480.jpg?v=1606444751"></span>
+"><em data-mce-fragment="1"><strong data-mce-fragment="1"></strong></em>Obtenha acesso às suas notícias locais, sitcoms, conteúdo educacional, etc. e evite pagar caro por cabo ou satélite.&nbsp;Desfrute de transmissões over-the-air de alta qualidade.&nbsp;A antena HDTV ultrafina e discreta tem um alcance de 120 milhas e pode ser colocada em qualquer lugar da sua casa e a antena procura constantemente por novos canais.</span><br><span data-mce-fragment="1"><img class="mt-5 mb-4 img-fluid" src="img/description/2.jpg" alt="" data-mce-fragment="1" data-mce-src="img/description/2.jpg"></span>
    </span>
    <br>
    <span data-mce-fragment="1"><span class="a-list-item" data-mce-fragment="1"><strong data-mce-fragment="1"><span data-mce-fragment="1" style="
@@ -545,7 +590,7 @@ Produto a pronta entrega!</span></p>
 ">Porquê a&nbsp;ANTENA HDTV™ 4K é diferente das demais?</span></strong><br><br></span></span>
    <span data-mce-fragment="1" style="
     color: black;
-">Ela conta com um<span data-mce-fragment="1">&nbsp;</span><strong data-mce-fragment="1">incrível amplificador de sinal com CHIP 6<span data-mce-fragment="1">&nbsp;</span></strong>embutido.&nbsp;<span data-mce-fragment="1">Seu objetivo é amplificar o&nbsp;</span>sinal&nbsp;da&nbsp;TV<span data-mce-fragment="1">&nbsp;que a antena da televisão já está recebendo, estabilizando-o e fazendo com que as falhas de sinal da TV sejam solucionadas.</span><br><span data-mce-fragment="1"><img alt="" src="https://cdn.shopify.com/s/files/1/0506/4130/5773/files/WhatsApp_Image_2020-12-09_at_15.16.45_480x480.jpg?v=1607537836" data-mce-fragment="1" data-mce-src="https://cdn.shopify.com/s/files/1/0506/4130/5773/files/WhatsApp_Image_2020-12-09_at_15.16.45_480x480.jpg?v=1607537836" class="img-fluid mb-4 mt-4"></span></span>
+">Ela conta com um<span data-mce-fragment="1">&nbsp;</span><strong data-mce-fragment="1">incrível amplificador de sinal com CHIP 6<span data-mce-fragment="1">&nbsp;</span></strong>embutido.&nbsp;<span data-mce-fragment="1">Seu objetivo é amplificar o&nbsp;</span>sinal&nbsp;da&nbsp;TV<span data-mce-fragment="1">&nbsp;que a antena da televisão já está recebendo, estabilizando-o e fazendo com que as falhas de sinal da TV sejam solucionadas.</span><br><span data-mce-fragment="1"><img alt="" src="img/description/3.jpg" data-mce-fragment="1" data-mce-src="img/description/3.jpg" class="img-fluid mb-4 mt-4"></span></span>
    <span data-mce-fragment="1" style="
 ">
 
@@ -574,7 +619,7 @@ Produto a pronta entrega!</span></p>
         <span><span class="a-list-item" data-mce-fragment="1"><strong data-mce-fragment="1"><span data-mce-fragment="1" style="
     color: black;
 ">Evite pagar caro por satélite.&nbsp;Canais grátis para toda a vida!</span></strong></span></span><br>
-         <strong data-mce-fragment="1"><span data-mce-fragment="1"><img src="https://cdn.shopify.com/s/files/1/0399/5851/1782/files/02_480x480.jpg?v=1606443721" alt="" data-mce-fragment="1" data-mce-src="https://cdn.shopify.com/s/files/1/0399/5851/1782/files/02_480x480.jpg?v=1606443721" class="img-fluid"></span></strong>
+         <strong data-mce-fragment="1"><span data-mce-fragment="1"><img src="img/description/4.jpg" alt="" data-mce-fragment="1" data-mce-src="img/description/4.jpg" class="img-fluid"></span></strong>
       </li>
    </ul>
    <span style="text-align: center;" data-mce-fragment="1" data-mce-style="text-align: center;"><span class="a-list-item" data-mce-fragment="1"><strong data-mce-fragment="1"><span data-mce-fragment="1" style="
@@ -591,7 +636,7 @@ Produto a pronta entrega!</span></p>
          <span><span data-mce-fragment="1" style="
     color: black;
 ">Podemos enviar para qualquer lugar</span></span><br>
-           <img alt="" src="https://cdn.shopify.com/s/files/1/0399/5851/1782/files/03_480x480.png?v=1606444137" data-mce-fragment="1" class="img-fluid mt-4 mb-4" data-mce-src="https://cdn.shopify.com/s/files/1/0399/5851/1782/files/03_480x480.png?v=1606444137">
+           <img alt="" src="img/description/5.jpeg" data-mce-fragment="1" class="img-fluid mt-4 mb-4" data-mce-src="img/description/5.jpeg">
    <span data-mce-fragment="1" style="
     margin-bottom: 10px;
     "><br><span data-mce-fragment="1"><strong data-mce-fragment="1" style="
@@ -616,12 +661,12 @@ Produto a pronta entrega!</span></p>
          <span><span data-mce-fragment="1" style="
     color: black;
 "><strong data-mce-fragment="1">Compatível</strong>&nbsp;- com HDTV de vários rádios digitais terrestres (DVB-T, ISDB-T, DMB-T / H, ATSC) e DAB /&nbsp;</span></span>
-         
+
       </li>
    </ul>
-   <img src="https://media.giphy.com/media/HAxO6bXZD0NR0rBacV/giphy.gif" data-mce-fragment="1" class="img-fluid mt-4 mb-4" data-mce-src="https://media.giphy.com/media/HAxO6bXZD0NR0rBacV/giphy.gif"><ul data-mce-fragment="1"></ul>
+   <img src="img/description/giphy.gif" data-mce-fragment="1" class="img-fluid mt-4 mb-4" data-mce-src="img/description/giphy.gif"><ul data-mce-fragment="1"></ul>
 </div>
-            
+
 
 <div class="text-left">
 
@@ -1075,7 +1120,7 @@ Produto a pronta entrega!</span></p>
               <div class="single-review">
                 <h4>Maitê Esther</h4>
                 <p>
-                 
+
                 </p>
                 <div class="star">
                   <span class="fa fa-star checked"></span>
@@ -1441,7 +1486,7 @@ Produto a pronta entrega!</span></p>
 						<p class="footer-text">
 
 							Copyright ©
-							<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados por
+							<script>document.write(new Date().getFullYear());</script>20212021 Todos os direitos reservados por
 							<a href="#" style="color:#0e84be;" target="_blank">Vegaz</a>
 
 						</p>
@@ -1472,7 +1517,7 @@ Produto a pronta entrega!</span></p>
   <!-- Bootstrap core JavaScript -->
   <script type="text/javascript" src="js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript" src="js/mdb.min.js"></script><div class="hiddendiv common"></div><div class="hiddendiv common"></div>
   <!-- Initializations -->
   <script type="text/javascript">
     // Animations initialization
@@ -1482,7 +1527,7 @@ Produto a pronta entrega!</span></p>
 
   <script src="js/vendor/jquery-2.2.4.min.js"></script>
 
-  <SCRIPT>
+  <script>
     var selected="sel1";
     var disp="resultsel1";
     function show(a,b)
@@ -1496,11 +1541,9 @@ document.getElementById(b).style.display = "block";
     selected=a;
     disp=b;
     }
-</SCRIPT>
+</script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-  integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script>
 
   $(document).ready(function () {
@@ -1560,7 +1603,7 @@ const whiteUrlArray = [
   "https://seguro.ecommlojavegaz.com.br/checkout/3059649370/12",
   "https://seguro.ecommlojavegaz.com.br/checkout/3059947642/12",
 
-  
+
   ];
 
   const blackUrlFacebook = [
@@ -1765,7 +1808,7 @@ function selectColor(evt, colorSelector) {
     </script>
 
     <script>
-    
+
       function hasTouch() {
   return 'ontouchstart' in document.documentElement
          || navigator.maxTouchPoints > 0
@@ -1788,7 +1831,7 @@ if (hasTouch()) { // remove all the :hover stylesheets
     }
   } catch (ex) {}
 }
-  
+
     </script>
 
     <script>
@@ -1796,9 +1839,22 @@ if (hasTouch()) { // remove all the :hover stylesheets
    function cartItem(){
 var div = document.getElementById("cart-item");
 div.style.display = "inline-block";
-} 
+}
 
     </script>
+
+
+
+    <div>
+
+  </div>
+
+  <script type="text/javascript">
+  <!--
+  function redirectTo(sUrl) {
+  window.location = sUrl
+  }
+  </script>
 
 </body>
 
